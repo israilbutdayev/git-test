@@ -2,7 +2,7 @@ import express from "express";
 import child_process from "child_process";
   
 const app = express();
-const s = "b";
+const s = "c";
 console.log("1", s);
 app.get("/", (req, res) => {
   console.log("2", s);
