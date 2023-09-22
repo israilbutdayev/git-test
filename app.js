@@ -3,13 +3,13 @@ import child_process from "child_process";
 import Jimp from "jimp";
 console.log((await Jimp.create(10,10)).bitmap.height)
 const app = express();
-const s = "e";
+const s = "f";
 console.log("1", s);
 app.get("/", (req, res) => {
   console.log("2", s);
   child_process.execSync("git pull")
   console.log("3", s);
-  res.json({ mes: "ok" });
+  res.json({ mes: e });
 });
 
 app.listen(3020);
