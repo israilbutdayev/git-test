@@ -1,7 +1,7 @@
 import express from "express";
 import child_process from "child_process";
-import axios from "axios";
-console.log(axios.defaults)
+import Jimp from "jimp";
+console.log((await Jimp.create(10,10)).bitmap.height)
 const app = express();
 const s = "d";
 console.log("1", s);
