@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
   console.log("2", s);
   child_process.execSync("git pull")
   console.log("3", s);
-  res.json({ mes: e });
+  res.json({ mes: s });
 });
 
 app.listen(3020);
