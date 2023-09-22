@@ -2,7 +2,8 @@ import express from "express";
 import child_process from "child_process";
 import axios from 'axios'
 import test from 'test'
-
+import hash from 'hash'
+console.log(new hash('asfasfas'))
 test('synchronous passing tes', t => {
     // This test passes because it does not throw an exception.
     
