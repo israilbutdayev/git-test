@@ -1,18 +1,9 @@
 import express from "express";
 import child_process from "child_process";
 import axios from 'axios'
-import test from 'test'
-import hash from 'hash'
-child_process.execSync("git pull")
-// import random from 'random'
+import randomstring from "randomstring"
 
-
-// console.log(random.float((min = 0), (max = 1)))
-console.log(new hash('asfasfafasafas'))
-test('synchronous passing tes', t => {
-    // This test passes because it does not throw an exception.
-    
-  })
+console.log(randomstring.generate());
 
   
 const app = express();
