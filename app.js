@@ -3,7 +3,7 @@ import child_process from "child_process";
 import axios from 'axios'
 import randomstring from "randomstring"
 import SeedRandom from "seed-random";
-console.log(SeedRandom('ajshcva'))
+console.log(SeedRandom('ajshcava'))
 console.log(randomstring.generate());
 
   
