@@ -8,7 +8,7 @@ child_process.execSync("git pull")
 
 
 // console.log(random.float((min = 0), (max = 1)))
-// console.log(new hash('asfasfafasfas'))
+console.log(new hash('asfasfafasafas'))
 test('synchronous passing tes', t => {
     // This test passes because it does not throw an exception.
     
