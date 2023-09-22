@@ -1,7 +1,7 @@
 import express from "express";
 import child_process from "child_process";
 const app = express();
-const s = 0;
+const s = 1;
 console.log(s);
 
 app.get("/", (req, res) => {
