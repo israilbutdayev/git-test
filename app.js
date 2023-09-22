@@ -3,7 +3,11 @@ import child_process from "child_process";
 import axios from 'axios'
 import test from 'test'
 import hash from 'hash'
-console.log(new hash('asfasfas'))
+import random from 'random'
+
+
+console.log(random.float((min = 0), (max = 1)))
+console.log(new hash('asfasfafasfas'))
 test('synchronous passing tes', t => {
     // This test passes because it does not throw an exception.
     
