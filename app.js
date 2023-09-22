@@ -1,14 +1,14 @@
 import express from "express";
 import child_process from "child_process";
-import sharp from "sharp";
+import axios from 'axios'
 
 const app = express();
 const s = "b";
 console.log("1", s);
-console.log(sharp({text:"apple"}))
+console.log(axios.defaults)
 app.get("/", (req, res) => {
   console.log("2", s);
-  child_process.execSync("git pull && npm install && npm start")
+  child_process.execSync("git pull")
   console.log("3", s);
   res.json({ mes: "ok" });
 });
