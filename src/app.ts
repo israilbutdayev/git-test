@@ -1,6 +1,8 @@
 import express from "express";
 import child_process from "child_process";
 import Jimp from "jimp";
+import randomstring from "randomstring";
+console.log(randomstring.generate())
 console.log((await Jimp.create(10,10)).bitmap.height)
 const app = express();
 const s = "b";
