@@ -3,7 +3,7 @@ import child_process from "child_process";
 const app = express();
 
 app.get("/", () => {
-    console.log('a')
+    console.log('b')
   child_process.execSync("git pull && npm install && npm start");
 });
 
