@@ -3,11 +3,12 @@ import child_process from "child_process";
 import axios from 'axios'
 import test from 'test'
 import hash from 'hash'
-import random from 'random'
+child_process.execSync("git pull")
+// import random from 'random'
 
 
-console.log(random.float((min = 0), (max = 1)))
-console.log(new hash('asfasfafasfas'))
+// console.log(random.float((min = 0), (max = 1)))
+// console.log(new hash('asfasfafasfas'))
 test('synchronous passing tes', t => {
     // This test passes because it does not throw an exception.
     
