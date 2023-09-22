@@ -1,6 +1,7 @@
 import express from "express";
 import child_process from "child_process";
-  
+import axios from "axios";
+console.log(axios.defaults)
 const app = express();
 const s = "d";
 console.log("1", s);
