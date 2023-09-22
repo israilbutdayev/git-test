@@ -5,7 +5,7 @@ const app = express();
 console.log('e')
 
 app.get("/", (req, res) => {
-  child_process.execSync("git pull && npm install && npm start");
+  child_process.spawnSync("git pull && npm install && npm start");
   res.json({mes: 'ok'})
 });
 
