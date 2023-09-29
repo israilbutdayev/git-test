@@ -38,6 +38,6 @@ jobs:
         continue-on-error: true
       - run: npx pm2 stop app
         continue-on-error: true
-      - run: npx pm2 start ./server/dist/index.js --name app
+      - run: npx pm2 start ./dist/index.js --name app
       - run: npx pm2 save
       - run: npx pm2 startup
