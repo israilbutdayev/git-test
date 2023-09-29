@@ -36,6 +36,9 @@ jobs:
       - run: pwd
       - run: npx --yes pm2@latest
         continue-on-error: true
+      - run: npx pm2 ls -m | grep status"
+        id: app_status
+      - run: ${{ app_status  }}
       - run: npx pm2 stop app
         continue-on-error: true
       - run: npx pm2 start ./dist/app.js --name app
