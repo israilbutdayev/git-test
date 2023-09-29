@@ -16,7 +16,7 @@ jobs:
     needs: checkout
     strategy:
       matrix:
-        dir: [., client, server]
+        dir: [.]
     steps:
       - uses: actions/setup-node@v3
         with:
@@ -34,6 +34,8 @@ jobs:
     needs: build
     steps:
       - run: pwd
+      - run: npx --yes pm2@latest
+        continue-on-error: true
       - run: npx pm2 stop app
         continue-on-error: true
       - run: npx pm2 start ./server/dist/index.js --name app
