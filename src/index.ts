@@ -1,7 +1,7 @@
 import pm2 from "pm2";
 pm2.connect((err) => {
   const force_restart = false;
-  const force_start = false;
+  const force_start = true;
   const app_name = "pm2-test";
   const app_path = "./dist/app.js";
   if (err) {
