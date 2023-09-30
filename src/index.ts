@@ -30,10 +30,6 @@ pm2.connect((err) => {
           },
           (err, apps) => {
             if (err) console.log(err);
-            pm2.startup("ubuntu", (err, result) => {
-              if (err) console.log(err);
-              console.log(result);
-            });
             return pm2.disconnect();
           }
         );
