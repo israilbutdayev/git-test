@@ -15,6 +15,7 @@ pm2.connect((err) => {
       const is_online = process?.pm2_env?.status === "online";
       if (is_online || force_restart) {
         pm2.restart(app_name, (err, proc) => {
+          if (err) console.log(err);
           return pm2.disconnect();
         });
       } else {
@@ -28,6 +29,7 @@ pm2.connect((err) => {
             name: app_name,
           },
           (err, apps) => {
+            if (err) console.log(err);
             return pm2.disconnect();
           }
         );
